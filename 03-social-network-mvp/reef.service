@@ -1,0 +1,25 @@
+[Unit]
+Description=Reef social network
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=reef
+Group=reef
+WorkingDirectory=/opt/reef
+LoadCredential=reef-config:/etc/reef/reef.json
+ExecStart=/usr/local/bin/node /opt/reef/app.mjs
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=25
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/reef
+LimitNOFILE=8192
+
+[Install]
+WantedBy=multi-user.target

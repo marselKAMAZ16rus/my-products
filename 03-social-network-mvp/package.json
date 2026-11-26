@@ -1,0 +1,1 @@
+{"name":"reef-server","version":"1.0.0","private":true,"type":"module","engines":{"node":">=24"},"scripts":{"start":"node app.mjs"},"dependencies":{"nodemailer":"10.5.0"}}

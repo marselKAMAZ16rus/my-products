@@ -1,0 +1,13 @@
+{
+  "REEF_ORIGIN": "https://reef.example.com",
+  "REEF_OWNER_EMAIL": "owner@example.com",
+  "REEF_OWNER_NAME": "Владелец",
+  "REEF_PASSWORD_PEPPER": "REPLACE_WITH_RANDOM_SECRET_AT_LEAST_32_CHARACTERS",
+  "REEF_DATA_DIR": "/var/lib/reef",
+  "SMTP_HOST": "smtp.mail.ru",
+  "SMTP_PORT": "465",
+  "SMTP_USER": "sender@example.com",
+  "SMTP_PASSWORD": "REPLACE_WITH_APP_PASSWORD",
+  "REEF_PUSH_SUBJECT": "https://reef.example.com",
+  "PORT": "3300"
+}

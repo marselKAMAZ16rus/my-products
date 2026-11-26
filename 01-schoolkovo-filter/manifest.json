@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Подсветка задач Школково",
+  "version": "1.1",
+  "description": "Подсвечивает мои задачи в таблице проверки",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://1.shkolkovo.online/*",
+        "https://*.shkolkovo.online/*"
+      ],
+      "js": ["script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
